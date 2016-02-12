@@ -1,0 +1,16 @@
+group 'com.phillipwhiters'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'org.hibernate:hibernate-entitymanager:5.1.0.Final'
+    compile 'org.hsqldb:hsqldb-j5:2.2.4'
+}
